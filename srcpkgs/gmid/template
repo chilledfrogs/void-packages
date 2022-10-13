@@ -1,0 +1,14 @@
+# Template file for 'gmid'
+pkgname=gmid
+version=2.0.2
+revision=1
+build_style=configure
+configure_args="--prefix=/usr --mandir=/usr/share/man"
+hostmakedepends="pkg-config bison"
+makedepends="libevent-devel openssl-devel"
+short_desc="Security-focused Gemini server written in C"
+maintainer="Allen Sobot <chilledfrogs@disroot.org>"
+license="GPL-3.0-or-later"
+homepage="https://gmid.omarpolo.com/"
+distfiles="https://github.com/omar-polo/gmid/archive/${version}.tar.gz"
+checksum=7f9faa65bd8f5f4fb69e784c22e045f0124794ab0065d34a62fe015269f718f2
